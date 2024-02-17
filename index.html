@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HPV Vaccine</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+        border: 1px solid #2067bf;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      a {
+        color: #885df1;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 30px;
+        font-size: 18px;
+        background-color: #885df1;
+        color: #ffffff;
+        box-shadow: 5px 5px 5px rgba(0 0 0 0.3);
+      }
+      button:hover {
+        background-color: #ffffff;
+        color: #885df1;
+        cursor: pointer;
+      }
+      .coder {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        color: #272343;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Human Papilloma Virus (HPV)</h1>
+      <h4>
+        The human papillomavirus (HPV) is a common infection spread through sex.
+        which can also progress to cervical cancer.
+      </h4>
+      <p>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/251/original/istockphoto-1211393084-612x612.jpg?1698532580"
+        />
+        <strong
+          ><br />
+          HPV Vaccines
+        </strong>
+        Human papillomavirus vaccines are vaccines that prevent infection by
+        certain types of human papillomavirus. Available HPV vaccines protect
+        against either two, four, or nine types of HPV. All HPV vaccines protect
+        against at least HPV types 16 and 18, which cause the greatest risk of
+        cervical cancer.
+        <br />
+        <a href="https://en.wikipedia.org/wiki/HPV_vaccine" target="_blank"
+          >learn more on wikipedia
+        </a>
+      </p>
+      <button>Get Vaccine Now</button>
+      <p class="coder">This page was coded by Thomas Jennifer</p>
+      <script>
+        function vaccine() {
+          let name = prompt("what is your name");
+          let email = prompt("what is your email address");
+          let emoji = prompt("what is your favourite emoji");
+          alert(
+            "Thank you " +
+              name +
+              " we'll be in touch via email,meanwhile stay safe " +
+              emoji
+          );
+        }
+        let getVaccine = document.querySelector("button");
+        getVaccine.addEventListener("click", vaccine);
+      </script>
+    </div>
+  </body>
+</html>
